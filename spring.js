@@ -108,7 +108,7 @@ function sCartFun2(index) {
             <div class="cloth-desc text-[1rem] mt-2">
                 <h1>${springData[index].desc}</h1>
             </div> 
-            <div class="right2 h-full w-full flex flex-col justify-end gap-5">
+            <div class="right2 h-full w-full flex flex-col justify-end gap-1 md:gap-3">
                 <div class="w-full items-end flex justify-between">
                     <div class="cloth-price text-[1rem]"><h1>₹${springData[index].cost}</h1></div>
                     <div class="rate">
