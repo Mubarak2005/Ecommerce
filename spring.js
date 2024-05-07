@@ -37,11 +37,11 @@ const springData = [
 function springDataFun() {
   let clutter = "";
   springData.forEach((e, idx) => {
-    clutter += `<div id="${e.place}" class="cloth h-[50vh] lg:h-[55vh] xl:h-[55vh] font-medium border-black bg-white rounded-xl relative">
-        <div class="img h-[18rem] w-full">
+    clutter += `<div id="${e.place}" class="cloth h-[450px] font-medium border-black bg-white rounded-xl relative">
+        <div class="img h-[300px] w-full">
             <img class="h-full w-full object-cover rounded-t-xl" src="${e.img}" alt="">
         </div>
-        <div class="cloth-desc h-[10vh] text-[1rem] overflow-hidden p-2">
+        <div class="cloth-desc h-[70px] text-[1rem] overflow-hidden p-2">
             <h1>${e.desc}</h1>
         </div>  
         <div class="w-full bottom flex justify-between absolute bottom-0 left-0 p-2 mt-3">
