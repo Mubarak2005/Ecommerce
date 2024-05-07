@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Shopper</title>
+    
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    
+    
+</head>
+<body class="scroll-smooth">
+    <div class="main h-full w-full ">
+
+        <div class="s-cart hidden h-[65%] w-[85%] md:w-[65%] lg:h-1/2 lg:w-1/2 fixed z-[3] rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex">
+            
+        </div>
+        <div class="main2">
+
+            <div class="home h-screen w-full bg-[#cfece3] overflow-hidden relative">
+                <div class="nav h-16 w-full fixed top-0 left-0 flex justify-between items-center bg-[#56ab92cc] backdrop-blur-md z-[4] pl-2">
+                    <div class="left-nav h-full w-[150%] md:w-[40%] lg:w-[30%] xl:w-[25%] flex justify-start md:justify-center items-center opacity-1">
+                        <h1 class="text-[1.3rem] font-medium md:text-[1.7rem]">Urban Shopper</h1>
+                    </div>
+                    <div class="right-nav h-full w-[100%] flex justify-end items-center">
+                        
+                        <div class="h-full w-full flex justify-end items-center relative">
+                            <div class="right-nav2 h-[60%] w-[0%] flex justify-end items-center rounded-md px-2 ease-in duration-500 relative">
+                                <i class="search cursor-pointer text-2xl ri-search-line"></i>
+                                <input class="s-input opacity-0 px-2 h-full w-full outline-none bg-transparent text-black placeholder:text-black" type="text" placeholder="Search...">
+                                <i class="close hidden cursor-pointer text-2xl ri-close-line"></i>
+                                <div class="search-output-div hidden min-h-20 max-h-[17.4rem] overflow-hidden w-[0%] p-2 bg-[#eeeded] absolute top-[2.5rem] left-[.05rem] rounded-md">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-[.8rem] md:p-[1rem] md:block text-2xl relative cursor-pointer"><i class="m-fav-icon ri-heart-line"></i></div>
+                        <div class="p-[.8rem] md:p-[1rem] md:block text-2xl"><i class="cart-icon cursor-pointer ri-shopping-cart-line"></i></div>
+                        <div class="p-[.8rem] md:p-[1rem] text-2xl"><i class="profile-icon cursor-pointer ri-user-line"></i></div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="nav2 text-[1rem] min-h-14 w-full p-2 fixed left-0 top-16 font-medium ease-in duration-300 flex justify-center gap-3 flex-wrap items-center bg-[#78c6a3bd] backdrop-blur-md z-[3]">
+                    <h1 class="py-1 px-2 bg-[#beefd988] rounded-md">All Cloths</h1>
+                    <a href="#Featured"><h1 class="py-1 px-2 bg-[#beefd988] rounded-md">Featured</h1></a>
+                    <a href="#spring-collections"><h1 class="py-1 px-2 bg-[#beefd988] rounded-md">Spring collections</h1></a>
+                    <a href="#summer"><h1 class="py-1 px-2 bg-[#beefd988] rounded-md">Summer wear</h1></a>
+                    <a href="#t-shirt"><h1 class="py-1 px-2 bg-[#beefd988] rounded-md">T-shirts</h1></a>
+                </div>
+                <div class="profile hidden opacity-0 ease-linear duration-300 w-[30vh] h-[32vh] bg-[#ffffff8d] backdrop-blur p-[.7rem] rounded-lg fixed top-[4.3rem] right-[.3rem] z-[4] ">
+                    <div class="w-full h-full font-medium flex flex-col justify-start items-center gap-3 p-2 rounded-lg bg-[#78c6a3a7] backdrop-blur">
+                        <div class="circle h-[10vh] w-[10vh] bg-red-500 rounded-full overflow-hidden">
+                            <img src="mubarak.JPG" alt="">
+                        </div>
+                        <h1 class="font-medium">Mubarak Ansari</h1>
+                        <div class="log-out w-full flex gap-2">
+                            <i class="ri-arrow-right-s-line"></i>
+                            <h1>Frontend Developer</h1>
+                        </div>
+                        <div class="log-out w-full flex gap-2">
+                            <i class="ri-logout-box-r-line"></i>
+                            <h1>Log-Out</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="booked-div hidden h-[30vh] w-[50vh] bg-[#ffffff8d] backdrop-blur drop-shadow-[0_35px_35px_rgba(1,1,10,.25)] rounded-lg flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[6]">
+                    <i class="book-close text-3xl cursor-pointer absolute top-2 right-2 ri-close-line"></i>
+                    <i class="text-8xl ri-check-double-line"></i>
+                    <h1 class="text-black text-2xl font-bold">Your Order is confirm</h1>
+                </div>
+
+                <div class="cart-outer-section h-screen w-full md:w-[65vh] bg-white fixed -right-[200%] z-[5] px-5 py-3 drop-shadow-2xl transition-all duration-500 ease-in-out">
+                    <div class="h-full w-full relative rounded-xl ">
+                        <div class="close-div w-full flex justify-between items-center px-2">
+                            <h1 class="text-[1.5rem] font-medium">Cart  <i class="ri-shopping-cart-line"></i></h1>
+                            <i class="cart-close cursor-pointer text-[2rem] p-[.7rem] ri-close-line"></i>
+                        </div>
+                        <div class="cart-inner-section h-[70%] w-full bg-[#86cdad] rounded-lg flex flex-col gap-3 overflow-y-scroll p-3 ">
+                            <h2 class="self-center text-xl">Cart is Empty</h2>
+                            
+
+
+                        </div>
+                        <div class="checkout-div h-full w-full px-4 font-medium">
+                            <div class="h-5 flex justify-between items-center mt-2">
+                                <h1>Bill</h1>
+                                <h1>-</h1>
+                                <h1>₹ <span class="bill">0</span></h1>
+                            </div>
+                            <div class="h-7 flex justify-between items-center">
+                                <h1>Shipping Free</h1>
+                                <h1>-</h1>
+                                <h1>- <span class="">₹110</span></h1>
+                            </div>
+                            <div class="h-7 flex justify-between items-center font-bold">
+                                <h1>Total Bill</h1>
+                                <h1>-</h1>
+                                <h1>₹ <span class="total-bill">0</span></h1>
+                            </div>
+                            
+                            <button class="checkout-button p-4 w-full rounded-lg bg-green-400 font-bold cursor-pointer">Checkout</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fav-outer-section h-screen w-full md:w-[65vh] bg-white fixed -right-[200%] z-[5] px-5 py-3 drop-shadow-2xl transition-all duration-500 ease-in-out">
+                    <div class="h-full w-full relative rounded-xl">
+                        <div class="close-div w-full flex justify-between items-center px-2">
+                            <h1 class="text-[1.5rem] font-medium">Favourates <i class="ri-heart-fill"></i></h1>
+                            <i class="fav-close cursor-pointer text-[2rem] p-[.7rem] ri-close-line"></i>
+                        </div>
+                        <div class="fav-inner-section h-[90%] w-full bg-violet-300 rounded-lg flex flex-col gap-3 overflow-y-scroll p-3 ">
+                            <h2 class="self-center text-xl">Add Product to Favourates</h2>
+                            
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="hero h-[110vh] w-full flex flex-col md:flex-row absolute top-0 left-0">
+                        <div class="left-hero w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-start gap-2 pl-[5vw] mt-[15vh] md:-mt-[0vh]">
+                            <h1 class="text-4xl font-medium">Kangaroo wear</h1>
+                            <h1 class="text-5xl font-medium">New Collection Arrive</h1>
+                            <h1 class="text-xl ">Cool Casual Outfits</h1>
+                            <button class="p-2 border-none rounded-md font-bold bg-[#78c6a3]">Shop now <i class="ri-arrow-down-line"></i></button>
+                        </div>
+                        <div class="right-hero w-full h-1/2 md:w-1/2 md:h-full flex justify-center items-start md:items-center">
+                            <img class="" src="man2.png" alt="">
+                        </div>
+                </div>
+            </div>
+
+            <div id="Featured" class="new-arrive min-h-screen w-full p-4 md:p-10 relative flex justify-center items-start flex-col gap-4">
+                <h1 class="text-5xl font-medium mb-2">Featured Clothes</h1>
+                <div class="clothes section h-full w-full grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 rounded-xl bg-blue-200 p-4 pt-6 md:p-10">
+                                
+                </div>
+            </div>
+
+            <div id="spring-collections" class="summer min-h-screen w-full p-4 md:p-10 flex justify-center items-start flex-col gap-4">
+                <h1 class="text-5xl font-medium mb-2">Spring Collections</h1>
+                <div class="clothes section h-full w-full grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 rounded-xl bg-emerald-200 p-4 pt-6 md:p-10">
+                    
+                </div>
+            </div>
+
+            <div id="summer" class="new-arrive min-h-screen w-full p-4 md:p-10 relative flex justify-center items-start flex-col gap-4">
+                <h1 class="text-5xl font-medium mb-2">Summer wear</h1>
+                <div class="clothes section h-full w-full grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 rounded-xl bg-rose-200 p-4 pt-6 md:p-10">
+                    
+                </div>
+            </div>
+
+            <div id="t-shirt" class="new-arrive section min-h-screen w-full p-4 md:p-10 relative flex justify-center items-start flex-col gap-4">
+                <h1 class="text-5xl font-medium mb-2">T-shirts</h1>
+                <div class="clothes section h-full w-full font-medium grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 rounded-xl bg-violet-200 p-4 pt-6 md:p-10">
+                    
+                </div>
+            </div>
+        </div>
+       
+        
+
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script src="featured.js"></script>
+    <script src="newCart.js"></script>
+    <script src="spring.js"></script>
+    <script src="summer.js"></script>
+    <script src="tShirt.js"></script>
+    <script src="favourate.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
