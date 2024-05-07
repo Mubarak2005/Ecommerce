@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: #000;
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: #00000065; */
+}
+/* body{
+    scroll-behavior: smooth;
+} */
+.search-output-div:nth-last-child(1){
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    /* height: 0; */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #373636a4;
+    border-radius: 30px;
+}
+
+
