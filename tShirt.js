@@ -3,21 +3,21 @@ let clothes3 = document.querySelector("#t-shirt .clothes");
 const tShirtData = [
   {
     img: "https://i.pinimg.com/564x/c2/8d/7e/c28d7e8eaec87aafb22565283d376c2d.jpg",
-    desc: "Plain Color Short Sleeved tshirt Unisex Summer T-Shirt - Grey / 4XL",
+    desc: "Plain Color Short Sleeved tshirt Unisex Summer T-Shirt",
     cost: "699",
     place: "tshirt-place1",
     rate: "(1.4k)",
   },
   {
     img: "https://i.pinimg.com/564x/df/1d/85/df1d85a42df4963fb70ac7116af4860e.jpg",
-    desc: "GURUNVANI TShirt Men Harajuku Streetwear Tshirt Men T Shirt Short Sleeve",
+    desc: "GURUNVANI TShirt Men Harajuku Streetwear Tshirt Men",
     cost: "599",
     place: "tshirt-place2",
     rate: "(1.4k)",
   },
   {
     img: "https://i.pinimg.com/564x/15/70/ed/1570ede1db3fc1879e72b2d7adbf1be0.jpg",
-    desc: "Mens 6 Color Eclipse Graphic Pritned tshirt Round Neck Short Sleeve T-shirt",
+    desc: "Mens 6 Color Eclipse Graphic Pritned tshirt Round Neck",
     cost: "450",
     place: "tshirt-place3",
     rate: "(1.4k)",
