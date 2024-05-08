@@ -11,13 +11,13 @@ function updateFavoritesUI() {
             <div class="img w-[10vh] h-full flex items-center p-1 rounded-md ml-2">
                 <img class="object-cover rounded-md" src="${e.img}" alt="">
             </div>
-            <div class="cart-desc h-full w-[70%] md:w-[30vh] p-3 text-[.8rem] md:text-[1rem] flex items-start overflow-hidden">
-                <h1>${e.desc}</h1>
+            <div class="fav-desc h-full w-full md:w-[30vh] p-3 text-[.7rem] md:text-[.9rem] flex items-start overflow-hidden">
+                <h1 class="h-full w-full whitespace-wrap overflow-hidden text-ellipsis" >${e.desc}</h1>
             </div>
         </div>    
-        <div class="cart-cost h-full w-[15vh] flex flex-col justify-center gap-3 items-center p-2">
-            <i class="text-2xl ri-heart-fill"></i>
-            <button data-idx="${idx}" class="py-[2px] rounded-md delete-fav"><i data-idx="${idx}" class="delete-fav text-[1.4rem] text-red-400 ri-delete-bin-5-line"></i></button>
+        <div class="fav-cost h-full w-[10vh] flex flex-col justify-center gap-3 items-center p-2">
+            <i class="text-xl md:text-2xl ri-heart-fill"></i>
+            <button data-idx="${idx}" class="py-[2px] rounded-md delete-fav"><i data-idx="${idx}" class="delete-fav text-[1rem] md:text-[1.3rem] text-red-400 ri-delete-bin-5-line"></i></button>
         </div>
     </div>`;
     });
