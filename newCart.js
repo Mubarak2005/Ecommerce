@@ -27,15 +27,15 @@ function updateCartUI() {
             <div class="img w-[10vh] h-full flex items-center p-1 rounded-md ml-2">
                 <img class="object-cover rounded-md" src="${e.img}" alt="">
             </div>
-            <div class="cart-desc h-full w-[70%] md:w-[30vh] text-[.8rem] md:text-[1rem] flex flex-col items-start justify-between p-3">
+            <div class="cart-desc h-full w-[90%] bg-red-500 md:w-[30vh] text-[.7rem] md:text-[.9rem] flex flex-col items-start justify-between p-2">
                 <h1 class="h-[70%] overflow-hidden" >${e.desc}</h1>
                 <h1>₹${e.cost}</h1>
             </div>
         </div>    
-        <div class="cart-cost h-full w-[15vh] flex flex-col justify-center p-2 items-end">
+        <div class="cart-cost h-full w-[70px] text-[.8rem] md:text-[1rem] flex flex-col justify-center p-2 items-end">
             <h1>Qty: ${e.qty}</h1>
             <h1 class="font-bold" >₹${e.costf}</h1>
-            <button class="py-[2px] rounded-md delete-cart"><i data-idx="${idx}" class="delete-cart text-[1.4rem] text-red-400 ri-delete-bin-5-line"></i></button>
+            <button class="py-[2px] rounded-md delete-cart"><i data-idx="${idx}" class="delete-cart text-red-400 ri-delete-bin-5-line"></i></button>
         </div>
     </div>`;
     });
