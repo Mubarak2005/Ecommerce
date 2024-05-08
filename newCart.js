@@ -27,7 +27,7 @@ function updateCartUI() {
             <div class="img w-[10vh] h-full flex items-center p-1 rounded-md ml-2">
                 <img class="object-cover rounded-md" src="${e.img}" alt="">
             </div>
-            <div class="cart-desc h-full w-[90%] bg-red-500 md:w-[30vh] text-[.7rem] md:text-[.9rem] flex flex-col items-start justify-between p-2">
+            <div class="cart-desc h-full w-[90%] md:w-[30vh] text-[.7rem] md:text-[.9rem] flex flex-col items-start justify-between p-2">
                 <h1 class="h-[70%] overflow-hidden" >${e.desc}</h1>
                 <h1>₹${e.cost}</h1>
             </div>
