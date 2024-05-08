@@ -32,7 +32,7 @@ function updateCartUI() {
                 <h1>₹${e.cost}</h1>
             </div>
         </div>    
-        <div class="cart-cost h-full w-[70px] text-[.8rem] md:text-[1rem] flex flex-col justify-center p-2 items-end">
+        <div class="cart-cost h-full w-[70px] text-[.7rem] md:text-[1rem] flex flex-col justify-center p-2 items-end">
             <h1>Qty: ${e.qty}</h1>
             <h1 class="font-bold" >₹${e.costf}</h1>
             <button class="py-[2px] rounded-md delete-cart"><i data-idx="${idx}" class="delete-cart text-red-400 ri-delete-bin-5-line"></i></button>
