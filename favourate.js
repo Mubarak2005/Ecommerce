@@ -1,6 +1,8 @@
 const mFavIcon = document.querySelector(".m-fav-icon");
 const favClose = document.querySelector(".fav-close");
 const favInner = document.querySelector(".fav-inner-section");
+let favRed = document.querySelector(".fav-red");
+
 const favData = [];
 
 function updateFavoritesUI() {
@@ -22,6 +24,7 @@ function updateFavoritesUI() {
     </div>`;
     });
     document.querySelector(".fav-inner-section").innerHTML = clutter;
+    favRed.style.display = "block";
 }
 
 function initializeFavorites() {
@@ -70,6 +73,9 @@ favInner.addEventListener("click", (e) => {
             // console.log("click")
             favData.splice(favId, 1);
             updateFavoritesUI();
+        }
+        if (favData.length === 0) {
+            favRed.style.display = "none";
         }
     }
 });
