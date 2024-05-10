@@ -8,6 +8,7 @@ const deleteCartButtons = document.querySelectorAll(".delete-cart");
 const checkoutButton = document.querySelector(".checkout-button");
 const bookedDiv = document.querySelector(".booked-div");
 const bookClose = document.querySelector(".book-close");
+let cartRed = document.querySelector(".cart-red");
 
 
 checkoutButton.disabled = true;
@@ -40,6 +41,7 @@ function updateCartUI() {
     </div>`;
     });
     cartInner.innerHTML = clutter;
+    cartRed.style.display = "block";
     calculateBill();
 }
 
@@ -73,6 +75,7 @@ cartInner.addEventListener("click", (e) => {
             tBSpan.textContent = 0;
             checkoutButton.disabled = true;
             checkoutButton.style.cursor = "not-allowed";
+            cartRed.style.display = "none";
         }
         
     }
