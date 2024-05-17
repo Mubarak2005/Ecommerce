@@ -51,7 +51,7 @@ function calculateBill() {
         bill += Number(e.costf);
     });
     billSpan.textContent = bill;
-    let tBill = bill - 110;
+    let tBill = bill + 110;
     tBSpan.textContent = tBill;
 }
 
