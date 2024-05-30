@@ -34,26 +34,26 @@ const summerData = [
 function summerDataFun() {
   let clutter = "";
   summerData.forEach((e, idx) => {
-    clutter += `<div id="${e.place}" class="cloth h-[450px] font-medium border-black bg-white rounded-xl relative">
-        <div class="img h-[300px] w-full">
-            <img class="h-full w-full object-cover rounded-t-xl" src="${e.img}" alt="">
-        </div>
-        <div class="cloth-desc h-[70px] text-[1rem] overflow-hidden p-2">
-            <h1>${e.desc}</h1>
-        </div>  
-        <div class="w-full bottom flex justify-between absolute bottom-0 left-0 p-2 mt-3">
-            <div class="ml-1">
-                <div class="cloth-price text-[1rem]"><h1>₹${e.cost}</h1></div>
-                <div class="rate">
-                    <h1><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i> ${e.rate}</h1>
-                </div>
-            </div>
-            <div class="favcart text-2xl flex justify-center items-center gap-4 mr-5">
-                <div data-fav="${idx}" class="p-1 cursor-pointer"><i data-fav="${idx}" class="fav ri-heart-line"></i></div>
-                <div data-idx="${idx}" class="Plus-cart p-1 cursor-pointer"><i data-idx="${idx}" class="ri-add-circle-fill"></i></div>
+    clutter += `<div id="${e.place}" class="cloth h-[280px] md:h-[430px] font-medium border-black bg-white rounded-xl relative">
+    <div class="img h-[170px] md:h-[250px] w-full">
+        <img class="h-full w-full object-cover rounded-t-xl" src="${e.img}" alt="">
+    </div>
+    <div class="cloth-desc h-[70px] md:h-[90px] text-[.8rem] md:text-[1rem] overflow-hidden p-2">
+        <h1>${e.desc}</h1>
+    </div>  
+    <div class="w-full bottom flex justify-between absolute bottom-0 left-0 p-2 mt-3">
+        <div class="ml-1">
+            <div class="cloth-price text-[.9rem] md:text-[1.1rem]"><h1>₹${e.cost}</h1></div>
+            <div class="rate text-[.75rem] md:text-[1rem]">
+                <h1><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i> ${e.rate}</h1>
             </div>
         </div>
-    </div>`;
+        <div class="favcart text-[1.3rem] md:text-2xl flex justify-center items-center gap-3 md:gap-4 mr-1 md:mr-4">
+            <div data-fav="${idx}" class="p-1 cursor-pointer"><i data-fav="${idx}" class="fav ri-heart-line"></i></div>
+            <div data-idx="${idx}" class="Plus-cart p-1 cursor-pointer"><i data-idx="${idx}" class="ri-add-circle-fill"></i></div>
+        </div>
+    </div>
+</div>`;
   });
   clothes2.innerHTML = clutter;
 }
