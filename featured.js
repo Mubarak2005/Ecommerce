@@ -73,21 +73,21 @@ const featuredData = [
 function featuredDataFun() {
   let clutter = "";
   featuredData.forEach((e, idx) => {
-    clutter += `<div id="${e.place}" class="cloth h-[450px] font-medium border-black bg-white rounded-xl relative">
-        <div class="img h-[300px] w-full">
+    clutter += `<div id="${e.place}" class="cloth h-[280px] md:h-[430px] font-medium border-black bg-white rounded-xl relative">
+        <div class="img h-[170px] md:h-[250px] w-full">
             <img class="h-full w-full object-cover rounded-t-xl" src="${e.img}" alt="">
         </div>
-        <div class="cloth-desc h-[70px] text-[1rem] overflow-hidden p-2">
+        <div class="cloth-desc h-[70px] md:h-[90px] text-[.8rem] md:text-[1rem] overflow-hidden p-2">
             <h1>${e.desc}</h1>
         </div>  
         <div class="w-full bottom flex justify-between absolute bottom-0 left-0 p-2 mt-3">
             <div class="ml-1">
-                <div class="cloth-price text-[1rem]"><h1>₹${e.cost}</h1></div>
-                <div class="rate">
+                <div class="cloth-price text-[.9rem] md:text-[1.1rem]"><h1>₹${e.cost}</h1></div>
+                <div class="rate text-[.75rem] md:text-[1rem]">
                     <h1><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i> ${e.rate}</h1>
                 </div>
             </div>
-            <div class="favcart text-2xl flex justify-center items-center gap-4 mr-5">
+            <div class="favcart text-[1.3rem] md:text-2xl flex justify-center items-center gap-3 md:gap-4 mr-1 md:mr-4">
                 <div data-fav="${idx}" class="p-1 cursor-pointer"><i data-fav="${idx}" class="fav ri-heart-line"></i></div>
                 <div data-idx="${idx}" class="Plus-cart p-1 cursor-pointer"><i data-idx="${idx}" class="ri-add-circle-fill"></i></div>
             </div>
@@ -141,12 +141,12 @@ function sCartFun1(index) {
             <div class="s-close w-fit flex justify-end cursor-pointer absolute top-7 right-6 md:top-4 md:right-4">
                 <div class="text-3xl"><i class="p-[.4rem] text-white rounded-lg bg-[#00000060] ri-close-line"></i></div>
             </div>
-            <div class="cloth-desc text-[1rem] mt-2">
-                <h1>${featuredData[index].desc}</h1>
+            <div class="cloth-desc h-[30px] text-[1rem] mt-2 md:mt-10">
+                <h1 class="" >${featuredData[index].desc}</h1>
             </div> 
-            <div class="right2 h-full w-full flex flex-col justify-end gap-1 md:gap-3">
+            <div class="right2 h-1/2 w-full flex flex-col justify-end gap-1 md:gap-3">
                 <div class="w-full items-end flex justify-between">
-                    <div class="cloth-price text-[1rem]"><h1>₹${featuredData[index].cost}</h1></div>
+                    <div class="cloth-price text-[1rem] font-bold"><h1>₹${featuredData[index].cost}</h1></div>
                     <div class="rate">
                         <h1><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i> ${featuredData[index].rate}</h1>
                     </div>
