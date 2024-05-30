@@ -25,7 +25,9 @@ function updateFavoritesUI() {
     });
     document.querySelector(".fav-inner-section").innerHTML = clutter;
     favRed.style.display = "block";
+    favRed.innerHTML = `<span class="h-full w-full flex justify-center items-center" >${favData.length}</span>`;
 }
+
 
 function initializeFavorites() {
     mFavIcon.addEventListener("click", () => {
@@ -63,6 +65,8 @@ function initializeFavorites() {
             updateFavoritesUI();
         }
     });
+    
+   
 }
 
 favInner.addEventListener("click", (e) => {
@@ -99,3 +103,4 @@ favIcons.forEach((e) => {
         }
     });
 });
+
