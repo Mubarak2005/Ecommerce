@@ -33,7 +33,7 @@ function updateCartUI() {
                 <h1>₹${e.cost}</h1>
             </div>
         </div>    
-        <div class="cart-cost h-full w-[70px] text-[.7rem] md:text-[1rem] flex flex-col justify-center p-2 items-end">
+        <div class="cart-cost h-full w-[70px] text-[.8rem] md:text-[1rem] flex flex-col justify-center p-2 items-end">
             <h1>Qty: ${e.qty}</h1>
             <h1 class="font-bold" >₹${e.costf}</h1>
             <button class="py-[2px] rounded-md delete-cart"><i data-idx="${idx}" class="delete-cart text-[.9rem] md:text-[1.1rem] text-red-400 ri-delete-bin-5-line"></i></button>
@@ -42,8 +42,11 @@ function updateCartUI() {
     });
     cartInner.innerHTML = clutter;
     cartRed.style.display = "block";
+    cartRed.innerHTML = `<span class="h-full w-full flex justify-center items-center" >${newCartData.length}</span>`;
     calculateBill();
 }
+
+// absolute -top-1 right-[.37rem] md:-top-[0.41rem]
 
 function calculateBill() {
     let bill = 0;
@@ -63,12 +66,15 @@ cartClose.addEventListener("click", () => {
     cartOuterSection.style.right = "-200%";
 });
 
+
+
 cartInner.addEventListener("click", (e) => {
     if (e.target.classList.contains("delete-cart")) {
         const cartId = e.target.dataset.idx;
         if (cartId >= 0) {
             newCartData.splice(cartId, 1);
             updateCartUI();
+            
         }
         if (newCartData.length === 0) {
             billSpan.textContent = 0;
